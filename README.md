@@ -1,1 +1,1 @@
-# Django
+Facebook interface for class practice
