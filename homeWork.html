@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="homeWork.css">
+</head>
+
+<body>
+
+
+    <!--   NavBar-->
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+
+
+
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                        ShamimAhamed
+                    </a>
+                </div>
+            </nav>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link ">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit mb-5">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!--   navbar end-->
+
+
+
+
+
+    <!--   Form start-->
+    <div class="container border">
+        <div class="row">
+            <p class="text text-center mt-5 ">Registration Form</p>
+            <div class="mb-3 mt-5 row">
+                <label for="fname" class="col-sm-2 col-5 col-form-label">First Name</label>
+                <div class="col-sm-10 col-7 w-70 ">
+                    <input type="text" class="form-control " placeholder="First Name" id="fname">
+                </div>
+            </div>
+
+
+            <div class=" row mb-2">
+                <label for="lname" class="col-sm-2 col-5 col-form-label">Last Name</label>
+                <div class="col-sm-10 col-3 ">
+                    <input type="text" class="form-control " placeholder="Last Name" id="lname">
+                </div>
+            </div>
+
+
+
+            <div class="row mb-2">
+                <label for="lname" class="col-sm-2 col-5 col-form-label">Last Name</label>
+                <div class="col-sm-10">
+
+
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Select Department</option>
+                        <option value="1">Java</option>
+                        <option value="2">Php</option>
+                        <option value="3">Graphics</option>
+                        <option value="1">Networking</option>
+                        <option value="2">C#</option>
+                        <option value="3">DataBase</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+
+
+            <div class=" row mb-2">
+                <label for="uname" class="col-sm-2 col-5 col-form-label">User Name</label>
+                <div class="col-sm-10 col-3 ">
+                    <input type="text" class="form-control" placeholder="User Name" id="uname">
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="mb-2 row">
+                <label for="pass" class="col-sm-2 col-5 col-form-label">Password</label>
+                <div class="col-sm-10 col-3 ">
+                    <input type="password" class="form-control " placeholder="Password" id="pass">
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="mb-2 row">
+                <label for="rpass" class="col-sm-2 col-5 col-form-label">Confirm Password</label>
+                <div class="col-sm-10 col-3 ">
+                    <input type="password" class="form-control " placeholder="Confirm Password" id="rpass">
+                </div>
+            </div>
+
+
+
+
+            <div class="mb-2 row">
+                <label for="email" class="col-sm-2 col-5 col-form-label">E-Mail</label>
+                <div class="col-sm-10 col-3 ">
+                    <input type="email" class="form-control " placeholder="E-Mail Address" id="rpass">
+                </div>
+            </div>
+
+
+            <div class="mb-2 row">
+                <label for="contact" class="col-sm-2 col-5 col-form-label">Contact No.</label>
+                <div class="col-sm-10 col-3 ">
+                    <input type="text" class="form-control " placeholder="(639)" id="contact">
+                </div>
+            </div>
+
+            <div class="text-center mt-3">
+                <button type="submit" class="btn btn-primary mb-5 ">Submit</button>
+
+            </div>
+        </div>
+
+    </div>
+    <!--   form end-->
+
+
+
+
+    <!--    user Registration Form-->
+    <div class="container border">
+        <p class="text text-primary text-center mt-5 mb-3">User Registration Form</p>
+        <div class=" row mb-2">
+            <label for="id" class="col-sm-2 col-5 col-form-label">ID</label>
+            <div class="col-sm-10 col-3 ">
+                <input type="text" class="form-control" placeholder="User ID" id="id">
+            </div>
+        </div>
+
+
+
+        <div class=" row mb-2">
+            <label for="name" class="col-sm-2 col-5 col-form-label">Name</label>
+            <div class="col-sm-10 col-3 ">
+                <input type="text" class="form-control" placeholder="Name" id="name">
+            </div>
+        </div>
+
+        <div class=" row mb-2">
+            <label for="email" class="col-sm-2 col-5 col-form-label">E-Mail</label>
+            <div class="col-sm-10 col-3 ">
+                <input type="email" class="form-control" placeholder="E-Mail" id="email">
+            </div>
+        </div>
+
+
+
+        <div class=" row mb-2">
+            <label for="select" class="col-sm-2 col-5 col-form-label">Round</label>
+            <div class="col-10">
+                <select class="form-select" aria-label="Default select example" id="select">
+                    <option selected>57</option>
+                    <option value="1">58</option>
+                    <option value="2">59</option>
+                    <option value="3">60</option>
+                </select>
+            </div>
+
+        </div>
+
+
+        <!--        checkbox start-->
+
+        <div class=" row mb-2 mt-5">
+            <label for="email" class="col-sm-2 col-5 col-form-label">Skills</label>
+            <div class="col-sm-10 col-3 ">
+                <div>
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Java
+                    </label>
+                </div>
+
+                <div>
+                    <input class="form-check-input" type="checkbox" value="" id="javaScript">
+                    <label class="form-check-label" for="javaScript">
+                        JavaScript
+                    </label>
+
+                </div>
+
+                <div>
+                    <input class="form-check-input" type="checkbox" value="" id="php">
+                    <label class="form-check-label" for="php">
+                        Php
+                    </label>
+                </div>
+
+                <div>
+                    <input class="form-check-input" type="checkbox" value="" id="nt">
+                    <label class="form-check-label" for="nt">
+                        Networking
+                    </label>
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+        <!--checkbox end-->
+
+
+
+        <!--        radio button start-->
+
+
+        <div class=" row mb-5 mt-5 ">
+            <label for="email" class="col-sm-2 col-5 col-form-label">Gender</label>
+            <div class="col-sm-10 col-3 ">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Female
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Male
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="other" checked>
+                    <label class="form-check-label" for="other">
+                        Other
+                    </label>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg mb-5 mt-5">Submit</button>
+            </div>
+
+        </div>
+
+        <!--        radio button end-->
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <!--user Registration Form end-->
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>

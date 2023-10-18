@@ -1,0 +1,6 @@
+.border{
+    border: 2px solid black;
+    max-width: 50%;
+    margin-bottom: 3%;
+    box-shadow: 5px 10px 10px 5px #888888;
+}
