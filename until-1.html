@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+    until-1</title>
+</head>
+<body>
+   
+   <input type="text" id="num1">
+   <br>
+   <br>
+   <input type="text" id="num2" disabled>
+   <br>
+   <br>
+   <button onclick="check()">check</button>
+   
+   
+   <script>
+    
+       function check(){
+           
+//           var num1=parseInt(document.getElementById("num1").value);
+//           
+            var result=document.getElementById("num2");
+           
+           var sum=0;
+           var prom=parseInt(prompt("Enter a number"));
+           
+           while (prom != -1){
+                sum +=prom;
+               
+               prom=parseInt(prompt("Enter Another number"));
+               
+           }
+           result.value=sum;
+           
+       }
+    </script>
+    
+    
+</body>
+</html>

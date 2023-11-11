@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prime</title>
+</head>
+<body>
+   
+   <input type="text" id="num1">
+   <br>
+   <br>
+   
+   <button onclick="check()">check</button>
+   
+   
+   <script>
+    
+ 
+    
+       
+       function check(){
+           var num1=parseInt(document.getElementById("num1").value);
+      
+           var isPrime=true;
+           if(num1 == 1){
+               alert("Not a prime number");
+           }else{
+               
+               for (var i=2; i<=num1; i++){
+                   
+                   if(num1 % 2 == 0){
+                       isPrime=false;
+                       break;
+                   }
+               }
+               
+               if(isPrime ){
+                   alert(num1 + " is prime number");
+               }else{
+                   alert(num1 + " is not Prime");
+               }
+               
+               
+           }
+       }
+    </script>
+    
+</body>
+</html>

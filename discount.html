@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dsicount</title>
+</head>
+<body>
+   
+   <input type="text" id="num1">
+   <br><br>
+   
+   <input type="text" id="num2">
+   <br><br>
+    
+    <input type="text" id="num3">
+   <br><br>
+   
+   <button onclick="check()">check</button>
+   <br><br>
+   <input type="text" id="total" placeholder="total"> 
+   <br><br>
+    <input type="text" id="discount" placeholder="discount">
+   <br><br>
+   <input type="text" id="net" placeholder="net">
+  
+    
+    
+    <script>
+        
+        
+        function check(){
+            var num1=parseInt(document.getElementById("num1").value);
+        
+            var num2=parseInt(document.getElementById("num2").value);
+
+            var num3=parseInt(document.getElementById("num3").value);
+
+
+            var total=document.getElementById("total");
+
+            var dis=document.getElementById("discount");
+
+            var net=document.getElementById("net");
+
+
+            var sum=num1+num2+num3;
+           
+
+            total.value=sum;
+            var discount;
+            var nettotal;
+
+            if(sum >=5000){
+                discount= sum*.15;
+                dis.value=discount;
+                
+                
+            }else if(sum >=2000){
+                
+                discount=sum*.10;
+                dis.value=discount;
+
+            }else if(sum <1000){
+                discount=0;
+                dis.value=discount;
+            }
+
+            net.value=sum-discount;
+            
+
+            }
+    
+       
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>

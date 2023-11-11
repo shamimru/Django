@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Factorial</title>
+</head>
+<body>
+   
+   <input type="text" id="num1">
+   <br>
+   <br>
+   <input type="text" id="num2" placeholder="Result" disabled>
+   <br>
+   <br>
+   <button onclick="check()">check</button>
+    
+    
+    <script>
+    
+        function check(){
+            var fac=1;
+            var num1=parseInt(document.getElementById("num1").value);
+            
+             var result=document.getElementById("num2");
+            
+            if(num1 <0){
+                result.value="Invalid number ";
+            }else if(num1 == 1){
+//                alert("not a valid number");
+                result.value=fac;
+            }else{
+                
+                for(var i=1; i<=num1 ; i++){
+                    fac *=i;
+                    
+                }
+                result.value=fac;
+            }
+        }
+    </script>
+</body>
+</html>
